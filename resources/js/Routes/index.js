@@ -1,27 +1,19 @@
 import {createRouter, createWebHistory} from "vue-router";
-import HomePage from "@/Pages/HomePage.vue";
-import AboutPage from "@/Pages/AboutPage.vue";
-import Test from "@/Pages/Test.vue";
 import AdminLayout from "@/Layouts/AdminLayout.vue";
+import PortalLayout from "@/Layouts/PortalLayout.vue";
+import adminRoutes from "./admin.js";
+import portalRoutes from "./portal.js";
 
 const routes = [
     {
         path: '/admin',
         component: AdminLayout,
-        children: [
-            {
-                path: '',
-                component: HomePage
-            },
-            {
-                path: 'test',
-                component: Test,
-            },
-            {
-                path: 'about',
-                component: AboutPage,
-            },
-        ],
+        children: adminRoutes,
+    },
+    {
+        path: '/portal',
+        component: PortalLayout,
+        children: portalRoutes,
     },
     {
         path: '/:pathMatch(.*)*',
