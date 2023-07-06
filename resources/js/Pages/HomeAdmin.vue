@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h2>Home page</h2>
+    <h2>Home admin</h2>
 </template>
 
 <style scoped>
