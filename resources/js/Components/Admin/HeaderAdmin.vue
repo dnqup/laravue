@@ -1,7 +1,7 @@
 <template>
     <header class="navbar">
         <a href="">
-            <img src="/logo/logo_2.svg" alt="Quang Duy" class="logo">
+            <img src="/logo/quang_duy_logo.svg" alt="Quang Duy" class="logo">
         </a>
         <!-- <div>
             <form id="search-form" role="search" class="algolia-search-wrapper search-box">
@@ -38,13 +38,13 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
     background-color: #fff;
     box-sizing: border-box;
+}
 
-    .logo {
-        width: 132px;
-        height: 2.2rem;
-        min-width: 2.2rem;
-        margin-right: 0.8rem;
-        vertical-align: top;
-    }
+.logo {
+    width: 126px;
+    height: 2.2rem;
+    min-width: 2.2rem;
+    margin-right: 0.8rem;
+    vertical-align: top;
 }
 </style>
