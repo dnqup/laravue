@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 html, body {
     font-family: Inter, Helvetica, "sans-serif";
@@ -10,5 +15,3 @@ html, body {
 body {
     background-color: #f1f5f9;
 }
-
-

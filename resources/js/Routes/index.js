@@ -1,8 +1,8 @@
 import {createRouter, createWebHistory} from "vue-router";
-import AdminLayout from "@/Layouts/AdminLayout.vue";
-import PortalLayout from "@/Layouts/PortalLayout.vue";
 import adminRoutes from "./admin.js";
 import portalRoutes from "./portal.js";
+import AdminLayout from "@/Layouts/AdminLayout.vue";
+import PortalLayout from "@/Layouts/PortalLayout.vue";
 
 const routes = [
     {
@@ -14,6 +14,16 @@ const routes = [
         path: '/portal',
         component: PortalLayout,
         children: portalRoutes,
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: () => import('@/Components/Auth/Login.vue')
+    },
+    {
+        path: '/register',
+        name: 'Register',
+        component: () => import('@/Components/Auth/Register.vue')
     },
     {
         path: '/:pathMatch(.*)*',
